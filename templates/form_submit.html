@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Simple Email Function</title>
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <div id="container">
+            <div class="title">
+                <h1>Email Log in</h1>
+            </div>
+            <div id="content">
+                <form method="post" action="{{ url_for('login') }}">
+                  <label for="username">Please enter your name:</label>
+                  <input type="text" name="username" /><br />
+                  <label for="password">Please enter your password:</label>
+                  <input type="password" name="password" /><br />
+                  <label for="host">Please enter your host:</label>
+                  <input type="text" name="host" /><br />
+                  <label for="port">Please enter your port:</label>
+                  <input type="text" name="port" /><br />                  
+                  <input type="submit" />
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
